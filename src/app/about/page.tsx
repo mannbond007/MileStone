@@ -55,8 +55,8 @@ export default function AboutPage() {
                   </div>
                   <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-gold/10 text-gold border border-gold/20">Our Mission</span>
                 </div>
-                <h3 className="font-heading text-2xl font-bold text-foreground mb-4">Empowering Dreams Beyond Financial Limits</h3>
-                <div className="text-muted-foreground leading-relaxed space-y-4 text-sm">
+                <h3 className="font-heading text-2xl font-extrabold text-foreground mb-5">Empowering Dreams Beyond Financial Limits</h3>
+                <div className="text-muted-foreground leading-loose space-y-5 text-base">
                   <p>
                     Our mission is to identify, support, and empower deserving and talented students from every background — whether they belong to rural areas, towns, or cities, and whether they are financially weak or financially stable but in need of proper guidance, mentorship, and opportunities.
                   </p>
@@ -80,8 +80,8 @@ export default function AboutPage() {
                   </div>
                   <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-gold/10 text-gold border border-gold/20">Our Vision</span>
                 </div>
-                <h3 className="font-heading text-2xl font-bold text-foreground mb-4">A Future Where Talent Wins Over Privilege</h3>
-                <div className="text-muted-foreground leading-relaxed space-y-4 text-sm">
+                <h3 className="font-heading text-2xl font-extrabold text-foreground mb-5">A Future Where Talent Wins Over Privilege</h3>
+                <div className="text-muted-foreground leading-loose space-y-5 text-base">
                   <p>
                     Our vision is to build a future where every student — whether from a village, town, or city — gets equal access to quality education, guidance, mentorship, and opportunities needed to achieve their dreams.
                   </p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="font-heading text-2xl font-bold text-foreground">The Origin Story</h3>
               </div>
-              <div className="space-y-6 text-muted-foreground leading-relaxed relative z-10">
+              <div className="space-y-6 text-base text-muted-foreground leading-loose relative z-10">
                 <p>
                   The idea behind the Milestone Scholarship Program was not created overnight — it was built through years of real experiences, observations, and interactions with students from different backgrounds.
                 </p>
@@ -150,8 +150,8 @@ export default function AboutPage() {
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10 mb-4">
                       <Icon className="h-6 w-6 text-gold" />
                     </div>
-                    <h3 className="font-heading font-semibold text-foreground text-lg mb-2">{val.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{val.description}</p>
+                    <h3 className="font-heading font-bold text-foreground text-xl mb-3">{val.title}</h3>
+                    <p className="text-base text-muted-foreground leading-loose">{val.description}</p>
                   </div>
                 </ScrollReveal>
               );
@@ -175,9 +175,9 @@ export default function AboutPage() {
                     <div className="absolute left-2 top-1.5 h-5 w-5 rounded-full bg-gold flex items-center justify-center">
                       <div className="h-2 w-2 rounded-full bg-white" />
                     </div>
-                    <span className="text-xs font-semibold text-gold uppercase tracking-wider">{item.year}</span>
-                    <h3 className="font-heading font-semibold text-foreground text-lg mt-1">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mt-1">{item.description}</p>
+                    <span className="text-sm font-bold text-gold uppercase tracking-widest">{item.year}</span>
+                    <h3 className="font-heading font-bold text-foreground text-xl mt-2">{item.title}</h3>
+                    <p className="text-base text-muted-foreground leading-loose mt-2">{item.description}</p>
                   </div>
                 </ScrollReveal>
               ))}
