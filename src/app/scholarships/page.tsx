@@ -36,17 +36,17 @@ export default function ScholarshipsPage() {
                 <ScrollReveal key={cat.id} delay={i * 0.04}>
                   <div
                     id={cat.id}
-                    className="group bg-card rounded-2xl border border-border/50 p-6 transition-all hover:shadow-card-hover hover:border-gold/20 h-full flex flex-col"
+                    className="group bg-card rounded-2xl border border-border/50 p-6 transition-all hover:shadow-card-hover hover:border-accent/20 h-full flex flex-col"
                   >
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl mb-4" style={{ backgroundColor: `${cat.color}15` }}>
                       <Icon className="h-6 w-6" style={{ color: cat.color }} />
                     </div>
-                    <h3 className="font-heading font-semibold text-foreground text-lg mb-2">{cat.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">{cat.description}</p>
+                    <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white text-lg mb-2">{cat.title}</h3>
+                    <p className="text-base text-muted-foreground leading-loose mb-4 flex-1">{cat.description}</p>
                     <div className="space-y-2 pt-4 border-t border-border/50">
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">Scholarship</span>
-                        <span className="font-semibold text-gold">{cat.amount}</span>
+                        <span className="font-semibold text-accent">{cat.amount}</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">Eligibility</span>

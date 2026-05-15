@@ -15,7 +15,7 @@ export function FAQPreview() {
         <ScrollReveal>
           <SectionHeader
             badge="FAQs"
-            title="Frequently Asked Questions"
+            title={<>Frequently Asked <span className="text-accent">Questions</span></>}
             subtitle="Get quick answers to the most common questions about our scholarship program."
           />
         </ScrollReveal>
@@ -30,7 +30,7 @@ export function FAQPreview() {
                 <AccordionTrigger className="text-sm font-medium text-foreground text-left hover:no-underline py-4">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
+                <AccordionContent className="text-base text-muted-foreground leading-loose pb-4">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -39,7 +39,7 @@ export function FAQPreview() {
         </ScrollReveal>
         <ScrollReveal delay={0.2}>
           <div className="mt-8 text-center">
-            <Link href="/faqs" className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold-light transition-colors group">
+            <Link href="/faqs" className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
               View All FAQs
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>

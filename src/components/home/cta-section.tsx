@@ -12,17 +12,17 @@ export function CTASection() {
       <div className="absolute inset-0 gradient-hero dark:gradient-hero" />
       <div className="absolute inset-0 gradient-hero-light dark:hidden" />
       <div className="absolute inset-0 bg-grid" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gold/5 blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-accent/5 blur-[120px]" />
 
       <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
         <ScrollReveal>
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-gold/10 text-gold border border-gold/20">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-accent/10 text-accent border border-accent/20">
             <Sparkles className="h-3.5 w-3.5" />
             Start Your Journey Today
           </span>
-          <h2 className="mt-6 font-heading text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground dark:text-white text-balance">
+          <h2 className="mt-6 font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight tracking-tight text-primary dark:text-white dark:text-white text-balance">
             Your Future Starts With a
-            <span className="gradient-text-gold"> Single Step</span>
+            <span className="text-accent"> Single Step</span>
           </h2>
           <p className="mt-4 text-base md:text-lg text-muted-foreground dark:text-white/60 max-w-xl mx-auto leading-relaxed">
             Don&apos;t let financial constraints hold you back. Apply for the Milestone Scholarship and take the first step toward your dream career.

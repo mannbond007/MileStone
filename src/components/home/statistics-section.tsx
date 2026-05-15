@@ -18,8 +18,8 @@ export function StatisticsSection() {
               <ScrollReveal key={i} delay={i * 0.1}>
                 <div className="text-center p-6 rounded-2xl bg-card border border-border/50 shadow-premium transition-shadow hover:shadow-card-hover">
                   <div className="flex items-center justify-center mb-3">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10">
-                      <Icon className="h-6 w-6 text-gold" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10">
+                      <Icon className="h-6 w-6 text-accent" />
                     </div>
                   </div>
                   <div className="text-3xl md:text-4xl font-heading font-bold text-foreground">

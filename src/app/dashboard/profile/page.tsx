@@ -11,7 +11,7 @@ export default function ProfilePage() {
     <div className="max-w-3xl">
       <ScrollReveal>
         <div className="mb-8">
-          <h1 className="font-heading text-2xl font-bold text-foreground">My Profile</h1>
+          <h1 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white">My Profile</h1>
           <p className="text-muted-foreground text-sm mt-1">Manage your personal information and account settings.</p>
         </div>
       </ScrollReveal>
@@ -20,13 +20,13 @@ export default function ProfilePage() {
       <ScrollReveal delay={0.05}>
         <div className="bg-card rounded-2xl border border-border/50 p-6 mb-6">
           <div className="flex items-center gap-4 mb-6">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gold/10">
-              <User className="h-8 w-8 text-gold" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent/10">
+              <User className="h-8 w-8 text-accent" />
             </div>
             <div>
-              <h2 className="font-heading text-lg font-bold text-foreground">Student Name</h2>
+              <h2 className="font-heading text-lg font-extrabold tracking-tight text-primary dark:text-white">Student Name</h2>
               <p className="text-sm text-muted-foreground">student@example.com</p>
-              <span className="inline-block mt-1 px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-gold/10 text-gold border border-gold/20">Student</span>
+              <span className="inline-block mt-1 px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-accent/10 text-accent border border-accent/20">Student</span>
             </div>
           </div>
 
@@ -48,20 +48,20 @@ export default function ProfilePage() {
       {/* Account Info */}
       <ScrollReveal delay={0.1}>
         <div className="bg-card rounded-2xl border border-border/50 p-6">
-          <h3 className="font-heading font-semibold text-foreground mb-4">Account Information</h3>
+          <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white mb-4">Account Information</h3>
           <div className="space-y-3">
             <div className="flex items-center gap-3 text-sm">
-              <GraduationCap className="h-4 w-4 text-gold" />
+              <GraduationCap className="h-4 w-4 text-accent" />
               <span className="text-muted-foreground">Role:</span>
               <span className="text-foreground font-medium">Student</span>
             </div>
             <div className="flex items-center gap-3 text-sm">
-              <Mail className="h-4 w-4 text-gold" />
+              <Mail className="h-4 w-4 text-accent" />
               <span className="text-muted-foreground">Joined:</span>
               <span className="text-foreground font-medium">May 2025</span>
             </div>
             <div className="flex items-center gap-3 text-sm">
-              <Phone className="h-4 w-4 text-gold" />
+              <Phone className="h-4 w-4 text-accent" />
               <span className="text-muted-foreground">Applications:</span>
               <span className="text-foreground font-medium">2 submitted</span>
             </div>

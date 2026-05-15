@@ -24,11 +24,11 @@ export default async function BlogPostPage({ params }: Props) {
     <div className="pt-24">
       <article className="py-12 md:py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-gold transition-colors mb-8">
+          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors mb-8">
             <ArrowLeft className="h-4 w-4" /> Back to Blog
           </Link>
           <Badge variant="secondary" className="mb-4">{post.category}</Badge>
-          <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">{post.title}</h1>
+          <h1 className="font-heading text-3xl md:text-4xl font-extrabold tracking-tight text-primary dark:text-white mb-4">{post.title}</h1>
           <div className="flex items-center gap-4 text-sm text-muted-foreground mb-8">
             <span className="flex items-center gap-1"><Calendar className="h-4 w-4" />{formatDate(post.date)}</span>
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" />{post.readTime}</span>

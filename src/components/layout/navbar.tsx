@@ -96,7 +96,7 @@ export function Navbar() {
                   className={cn(
                     "relative px-3 py-2 text-sm font-medium rounded-lg transition-colors",
                     isActive
-                      ? "text-gold"
+                      ? "text-accent"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted/50",
                   )}
                 >
@@ -104,7 +104,7 @@ export function Navbar() {
                   {isActive && (
                     <motion.div
                       layoutId="nav-indicator"
-                      className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-6 rounded-full bg-gold"
+                      className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-6 rounded-full bg-accent"
                       transition={{
                         type: "spring",
                         stiffness: 380,
@@ -226,7 +226,7 @@ export function Navbar() {
                           className={cn(
                             "flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-colors mb-0.5",
                             isActive
-                              ? "bg-gold/10 text-gold"
+                              ? "bg-accent/10 text-accent"
                               : "text-muted-foreground hover:text-foreground hover:bg-muted/50",
                           )}
                         >

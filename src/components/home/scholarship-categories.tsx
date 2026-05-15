@@ -14,7 +14,7 @@ export function ScholarshipCategories() {
         <ScrollReveal>
           <SectionHeader
             badge="Scholarship Programs"
-            title="Explore Our Scholarships"
+            title={<>Explore Our <span className="text-accent">Scholarships</span></>}
             subtitle="Choose from 16+ scholarship categories across medical, engineering, law, arts, and more."
           />
         </ScrollReveal>
@@ -44,14 +44,14 @@ export function ScholarshipCategories() {
                     </div>
 
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-heading font-semibold text-foreground text-sm mb-1">
+                      <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white text-sm mb-1">
                         {cat.title}
                       </h3>
                       <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2 mb-3">
                         {cat.description}
                       </p>
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-semibold text-gold">{cat.amount}</span>
+                        <span className="text-xs font-semibold text-accent">{cat.amount}</span>
                         <ArrowRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                       </div>
                     </div>
@@ -66,7 +66,7 @@ export function ScholarshipCategories() {
           <div className="mt-12 text-center">
             <Link
               href="/scholarships"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold-light transition-colors group"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-light transition-colors group"
             >
               View All Scholarships
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />

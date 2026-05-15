@@ -27,7 +27,7 @@ export default function ApplicationsPage() {
       <ScrollReveal>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="font-heading text-2xl font-bold text-foreground">My Applications</h1>
+            <h1 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white">My Applications</h1>
             <p className="text-muted-foreground text-sm mt-1">Track and manage your scholarship applications.</p>
           </div>
           <Link href="/dashboard/apply">
@@ -45,7 +45,7 @@ export default function ApplicationsPage() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <h3 className="font-heading font-semibold text-foreground">{app.scholarship}</h3>
+                    <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white">{app.scholarship}</h3>
                     <Badge className={statusColors[app.status]} variant="outline">
                       {app.status.replace("_", " ")}
                     </Badge>

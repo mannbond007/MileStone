@@ -3,11 +3,13 @@
 import { cn } from "@/lib/utils";
 
 interface SectionHeaderProps {
-  title: string;
-  subtitle?: string;
+  title: React.ReactNode;
+  subtitle?: React.ReactNode;
   badge?: string;
   align?: "left" | "center";
   className?: string;
+  titleClassName?: string;
+  lineColor?: "primary" | "gold";
 }
 
 export function SectionHeader({
@@ -16,6 +18,8 @@ export function SectionHeader({
   badge,
   align = "center",
   className,
+  titleClassName,
+  lineColor = "primary",
 }: SectionHeaderProps) {
   return (
     <div
@@ -26,11 +30,11 @@ export function SectionHeader({
       )}
     >
       {badge && (
-        <span className="inline-block mb-4 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-gold/10 text-gold border border-gold/20">
+        <span className="inline-block mb-4 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-accent/10 text-accent border border-accent/20">
           {badge}
         </span>
       )}
-      <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground text-balance">
+      <h2 className={cn("font-heading text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-primary dark:text-white text-balance", titleClassName)}>
         {title}
       </h2>
       {subtitle && (
@@ -38,10 +42,11 @@ export function SectionHeader({
           {subtitle}
         </p>
       )}
-      {/* Decorative gold line */}
+      {/* Decorative line */}
       <div
         className={cn(
-          "mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-gold to-gold-light",
+          "mt-6 h-1.5 w-12 rounded-full",
+          lineColor === "primary" ? "bg-primary" : "bg-accent",
           align === "center" && "mx-auto"
         )}
       />

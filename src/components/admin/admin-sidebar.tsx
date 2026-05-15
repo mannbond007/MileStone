@@ -38,7 +38,7 @@ export function AdminSidebar() {
               href={link.href}
               className={cn(
                 "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors",
-                isActive ? "bg-gold/10 text-gold" : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                isActive ? "bg-accent/10 text-accent" : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
               )}
             >
               <Icon className="h-4 w-4" />

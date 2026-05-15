@@ -34,25 +34,25 @@ export default function ImportantDatesPage() {
                 const Icon = item.icon;
                 const statusColors = {
                   completed: "bg-green-500/10 text-green-600 border-green-500/20",
-                  ongoing: "bg-gold/10 text-gold border-gold/20",
+                  ongoing: "bg-accent/10 text-accent border-accent/20",
                   upcoming: "bg-muted text-muted-foreground border-border",
                 };
                 return (
                   <ScrollReveal key={i} delay={i * 0.1}>
                     <div className="relative pl-16">
                       <div className={`absolute left-3.5 top-3 h-6 w-6 rounded-full flex items-center justify-center z-10 ${
-                        item.status === "completed" ? "bg-green-500" : item.status === "ongoing" ? "bg-gold" : "bg-muted-foreground/30"
+                        item.status === "completed" ? "bg-green-500" : item.status === "ongoing" ? "bg-accent" : "bg-muted-foreground/30"
                       }`}>
                         <Icon className="h-3 w-3 text-white" />
                       </div>
                       <div className="bg-card rounded-2xl border border-border/50 p-5 transition-all hover:shadow-card-hover">
                         <div className="flex items-center justify-between mb-2">
-                          <h3 className="font-heading font-semibold text-foreground">{item.title}</h3>
+                          <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white">{item.title}</h3>
                           <Badge className={statusColors[item.status]} variant="outline">
                             {item.status === "completed" ? "Completed" : item.status === "ongoing" ? "Ongoing" : "Upcoming"}
                           </Badge>
                         </div>
-                        <p className="text-sm font-medium text-gold mb-1">{item.date}</p>
+                        <p className="text-sm font-medium text-accent mb-1">{item.date}</p>
                         <p className="text-sm text-muted-foreground">{item.description}</p>
                       </div>
                     </div>

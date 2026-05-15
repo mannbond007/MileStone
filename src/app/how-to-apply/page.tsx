@@ -54,12 +54,12 @@ export default function HowToApplyPage() {
               return (
                 <ScrollReveal key={i} delay={i * 0.08}>
                   <div className="bg-card rounded-2xl border border-border/50 p-6 flex items-start gap-5 transition-all hover:shadow-card-hover">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gold text-white font-heading font-bold text-lg shadow-gold">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent text-white font-heading font-bold text-lg shadow-gold">
                       {step.step}
                     </div>
                     <div>
-                      <h3 className="font-heading font-semibold text-foreground text-lg mb-1">{step.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                      <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white text-lg mb-1">{step.title}</h3>
+                      <p className="text-base text-muted-foreground leading-loose">{step.description}</p>
                     </div>
                   </div>
                 </ScrollReveal>
@@ -74,14 +74,14 @@ export default function HowToApplyPage() {
         <div className="absolute inset-0 bg-muted/30 dark:bg-navy/20" />
         <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h3 className="font-heading text-2xl font-bold text-foreground text-center mb-8">Required Documents</h3>
+            <h3 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white text-center mb-8">Required Documents</h3>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <div className="bg-card rounded-2xl border border-border/50 p-6">
               <ul className="grid sm:grid-cols-2 gap-3">
                 {documents.map((doc, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <CheckCircle className="h-4 w-4 text-gold shrink-0" />
+                    <CheckCircle className="h-4 w-4 text-accent shrink-0" />
                     {doc}
                   </li>
                 ))}

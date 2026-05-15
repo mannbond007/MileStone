@@ -15,7 +15,7 @@ export function BlogPreview() {
         <ScrollReveal>
           <SectionHeader
             badge="Latest Updates"
-            title="From Our Blog"
+            title={<>From Our <span className="text-accent">Blog</span></>}
             subtitle="Stay informed with the latest scholarship news, tips, and career guidance."
           />
         </ScrollReveal>
@@ -23,10 +23,10 @@ export function BlogPreview() {
           {blogPreviews.map((post, i) => (
             <ScrollReveal key={post.id} delay={i * 0.1}>
               <Link href={`/blog/${post.slug}`} className="group block h-full">
-                <div className="bg-card rounded-2xl border border-border/50 overflow-hidden transition-all hover:shadow-card-hover hover:border-gold/20 h-full flex flex-col">
+                <div className="bg-card rounded-2xl border border-border/50 overflow-hidden transition-all hover:shadow-card-hover hover:border-accent/20 h-full flex flex-col">
                   {/* Gradient placeholder for cover image */}
                   <div className="h-40 bg-gradient-to-br from-navy to-navy-light relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gold/5 group-hover:bg-gold/10 transition-colors" />
+                    <div className="absolute inset-0 bg-accent/5 group-hover:bg-accent/10 transition-colors" />
                     <div className="absolute bottom-3 left-3">
                       <Badge variant="secondary" className="text-xs bg-white/10 text-white border-0 backdrop-blur-sm">
                         {post.category}
@@ -34,10 +34,10 @@ export function BlogPreview() {
                     </div>
                   </div>
                   <div className="p-5 flex-1 flex flex-col">
-                    <h3 className="font-heading font-semibold text-foreground text-base mb-2 group-hover:text-gold transition-colors line-clamp-2">
+                    <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white text-base mb-2 group-hover:text-accent transition-colors line-clamp-2">
                       {post.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2 mb-4 flex-1">
+                    <p className="text-base text-muted-foreground leading-loose line-clamp-2 mb-4 flex-1">
                       {post.excerpt}
                     </p>
                     <div className="flex items-center justify-between text-xs text-muted-foreground pt-3 border-t border-border/50">
@@ -55,7 +55,7 @@ export function BlogPreview() {
         </div>
         <ScrollReveal delay={0.2}>
           <div className="mt-12 text-center">
-            <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold-light transition-colors group">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
               Read All Posts
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>

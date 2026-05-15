@@ -12,7 +12,7 @@ export default function AdminScholarshipsPage() {
       <ScrollReveal>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="font-heading text-2xl font-bold text-foreground">Scholarships</h1>
+            <h1 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white">Scholarships</h1>
             <p className="text-muted-foreground text-sm mt-1">Manage scholarship programs.</p>
           </div>
           <Button className="gradient-gold text-white font-semibold rounded-xl shadow-gold hover:opacity-90">
@@ -33,8 +33,8 @@ export default function AdminScholarshipsPage() {
                   </div>
                   <Badge variant="outline" className="bg-green-500/10 text-green-500 border-green-500/20">Active</Badge>
                 </div>
-                <h3 className="font-heading font-semibold text-foreground">{cat.title}</h3>
-                <p className="text-sm text-gold font-medium mt-1">{cat.amount}</p>
+                <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white">{cat.title}</h3>
+                <p className="text-sm text-accent font-medium mt-1">{cat.amount}</p>
                 <p className="text-xs text-muted-foreground mt-2">{cat.eligibility}</p>
                 <div className="flex items-center gap-2 mt-4 pt-3 border-t border-border/50">
                   <Button variant="outline" size="sm" className="rounded-lg flex-1"><Edit className="h-3 w-3 mr-1" /> Edit</Button>

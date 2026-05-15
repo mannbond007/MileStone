@@ -43,8 +43,8 @@ export default function ScholarshipTestPage() {
               return (
                 <ScrollReveal key={i} delay={i * 0.1}>
                   <div className="bg-card rounded-2xl border border-border/50 p-5 text-center">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10 mx-auto mb-3">
-                      <Icon className="h-6 w-6 text-gold" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 mx-auto mb-3">
+                      <Icon className="h-6 w-6 text-accent" />
                     </div>
                     <p className="text-sm text-muted-foreground">{item.title}</p>
                     <p className="text-lg font-heading font-bold text-foreground mt-1">{item.value}</p>
@@ -60,7 +60,7 @@ export default function ScholarshipTestPage() {
       <section className="py-12 md:py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h3 className="font-heading text-2xl font-bold text-foreground text-center mb-10">How the Test Works</h3>
+            <h3 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white text-center mb-10">How the Test Works</h3>
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-5">
             {testProcessSteps.map((step, i) => {
@@ -69,12 +69,12 @@ export default function ScholarshipTestPage() {
                 <ScrollReveal key={i} delay={i * 0.1}>
                   <div className="bg-card rounded-2xl border border-border/50 p-6 transition-all hover:shadow-card-hover">
                     <div className="flex items-center gap-3 mb-3">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gold text-white text-sm font-bold">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-white text-sm font-bold">
                         {step.step}
                       </div>
-                      <h4 className="font-heading font-semibold text-foreground">{step.title}</h4>
+                      <h4 className="font-heading font-extrabold tracking-tight text-primary dark:text-white">{step.title}</h4>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                    <p className="text-base text-muted-foreground leading-loose">{step.description}</p>
                   </div>
                 </ScrollReveal>
               );

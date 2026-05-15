@@ -33,7 +33,7 @@ export default function DashboardPage() {
       {/* Header */}
       <ScrollReveal>
         <div className="mb-8">
-          <h1 className="font-heading text-2xl md:text-3xl font-bold text-foreground">Welcome Back! 👋</h1>
+          <h1 className="font-heading text-2xl md:text-3xl font-extrabold tracking-tight text-primary dark:text-white">Welcome Back! 👋</h1>
           <p className="text-muted-foreground mt-1">Here&apos;s an overview of your scholarship journey.</p>
         </div>
       </ScrollReveal>
@@ -78,8 +78,8 @@ export default function DashboardPage() {
       <ScrollReveal delay={0.15}>
         <div className="bg-card rounded-2xl border border-border/50 p-5 mb-8">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="font-heading font-semibold text-foreground">Profile Completion</h3>
-            <span className="text-sm font-semibold text-gold">75%</span>
+            <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white">Profile Completion</h3>
+            <span className="text-sm font-semibold text-accent">75%</span>
           </div>
           <div className="w-full h-2 bg-muted rounded-full overflow-hidden">
             <div className="h-full w-3/4 gradient-gold rounded-full transition-all duration-1000" />
@@ -92,8 +92,8 @@ export default function DashboardPage() {
       <ScrollReveal delay={0.2}>
         <div className="bg-card rounded-2xl border border-border/50 p-5">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="font-heading font-semibold text-foreground">Recent Applications</h3>
-            <Link href="/dashboard/applications" className="text-sm text-gold hover:text-gold-light transition-colors flex items-center gap-1">
+            <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white">Recent Applications</h3>
+            <Link href="/dashboard/applications" className="text-sm text-accent hover:text-accent-light transition-colors flex items-center gap-1">
               View All <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>

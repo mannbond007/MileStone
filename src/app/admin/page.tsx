@@ -11,7 +11,7 @@ const adminStats = [
   { label: "Approved", value: 186, icon: CheckCircle, color: "text-green-500 bg-green-500/10" },
   { label: "Rejected", value: 21, icon: XCircle, color: "text-red-500 bg-red-500/10" },
   { label: "Total Users", value: 1250, icon: Users, color: "text-purple-500 bg-purple-500/10" },
-  { label: "Active Scholarships", value: 16, icon: BookOpen, color: "text-gold bg-gold/10" },
+  { label: "Active Scholarships", value: 16, icon: BookOpen, color: "text-accent bg-accent/10" },
 ];
 
 const recentApplications = [
@@ -34,7 +34,7 @@ export default function AdminDashboardPage() {
     <div className="max-w-6xl">
       <ScrollReveal>
         <div className="mb-8">
-          <h1 className="font-heading text-2xl md:text-3xl font-bold text-foreground">Admin Dashboard</h1>
+          <h1 className="font-heading text-2xl md:text-3xl font-extrabold tracking-tight text-primary dark:text-white">Admin Dashboard</h1>
           <p className="text-muted-foreground mt-1">Overview of the Milestone Scholarship Program.</p>
         </div>
       </ScrollReveal>
@@ -64,8 +64,8 @@ export default function AdminDashboardPage() {
         {/* Chart */}
         <ScrollReveal delay={0.1}>
           <div className="lg:col-span-3 bg-card rounded-2xl border border-border/50 p-6">
-            <h3 className="font-heading font-semibold text-foreground mb-4 flex items-center gap-2">
-              <TrendingUp className="h-4 w-4 text-gold" />
+            <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white mb-4 flex items-center gap-2">
+              <TrendingUp className="h-4 w-4 text-accent" />
               Application Trends
             </h3>
             <div className="h-48 flex items-end justify-around gap-2 px-4">
@@ -85,7 +85,7 @@ export default function AdminDashboardPage() {
         {/* Recent Applications */}
         <ScrollReveal delay={0.15}>
           <div className="lg:col-span-2 bg-card rounded-2xl border border-border/50 p-6">
-            <h3 className="font-heading font-semibold text-foreground mb-4">Recent Applications</h3>
+            <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white mb-4">Recent Applications</h3>
             <div className="space-y-3">
               {recentApplications.map((app) => (
                 <div key={app.id} className="flex items-center justify-between py-2 border-b border-border/30 last:border-0">

@@ -15,7 +15,7 @@ export default function AdminAnnouncementsPage() {
     <div className="max-w-3xl">
       <ScrollReveal>
         <div className="mb-8">
-          <h1 className="font-heading text-2xl font-bold text-foreground">Announcements</h1>
+          <h1 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white">Announcements</h1>
           <p className="text-muted-foreground text-sm mt-1">Send notifications to all users.</p>
         </div>
       </ScrollReveal>
@@ -27,7 +27,7 @@ export default function AdminAnnouncementsPage() {
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-500/10 mx-auto mb-4">
                 <Megaphone className="h-7 w-7 text-green-500" />
               </div>
-              <h3 className="font-heading text-xl font-bold text-foreground mb-2">Announcement Sent!</h3>
+              <h3 className="font-heading text-xl font-extrabold tracking-tight text-primary dark:text-white mb-2">Announcement Sent!</h3>
               <p className="text-sm text-muted-foreground">All users have been notified.</p>
               <Button variant="outline" className="mt-4 rounded-xl" onClick={() => setSent(false)}>Send Another</Button>
             </div>

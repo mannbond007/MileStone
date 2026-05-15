@@ -45,15 +45,15 @@ export function Footer() {
             {/* Contact Info */}
             <div className="space-y-2.5 text-sm">
               <div className="flex items-center gap-2.5 text-white/50">
-                <Mail className="h-4 w-4 text-gold" />
+                <Mail className="h-4 w-4 text-accent" />
                 <span>info@milestonescholarship.in</span>
               </div>
               <div className="flex items-center gap-2.5 text-white/50">
-                <Phone className="h-4 w-4 text-gold" />
+                <Phone className="h-4 w-4 text-accent" />
                 <span>+91 98765 43210</span>
               </div>
               <div className="flex items-center gap-2.5 text-white/50">
-                <MapPin className="h-4 w-4 text-gold" />
+                <MapPin className="h-4 w-4 text-accent" />
                 <span>New Delhi, India</span>
               </div>
             </div>
@@ -61,7 +61,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading font-semibold text-white text-sm uppercase tracking-wider mb-5">
+            <h3 className="font-heading font-extrabold tracking-tight text-white text-sm uppercase tracking-wider mb-5">
               Quick Links
             </h3>
             <ul className="space-y-2.5">
@@ -69,7 +69,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center gap-1 group"
+                    className="text-sm text-white/50 hover:text-accent transition-colors inline-flex items-center gap-1 group"
                   >
                     {link.label}
                     <ArrowUpRight className="h-3 w-3 opacity-0 -translate-y-0.5 group-hover:opacity-100 group-hover:translate-y-0 transition-all" />
@@ -81,7 +81,7 @@ export function Footer() {
 
           {/* Scholarships */}
           <div>
-            <h3 className="font-heading font-semibold text-white text-sm uppercase tracking-wider mb-5">
+            <h3 className="font-heading font-extrabold tracking-tight text-white text-sm uppercase tracking-wider mb-5">
               Scholarships
             </h3>
             <ul className="space-y-2.5">
@@ -89,7 +89,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center gap-1 group"
+                    className="text-sm text-white/50 hover:text-accent transition-colors inline-flex items-center gap-1 group"
                   >
                     {link.label}
                     <ArrowUpRight className="h-3 w-3 opacity-0 -translate-y-0.5 group-hover:opacity-100 group-hover:translate-y-0 transition-all" />
@@ -101,7 +101,7 @@ export function Footer() {
 
           {/* Resources + Newsletter */}
           <div>
-            <h3 className="font-heading font-semibold text-white text-sm uppercase tracking-wider mb-5">
+            <h3 className="font-heading font-extrabold tracking-tight text-white text-sm uppercase tracking-wider mb-5">
               Resources
             </h3>
             <ul className="space-y-2.5 mb-8">
@@ -109,7 +109,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center gap-1 group"
+                    className="text-sm text-white/50 hover:text-accent transition-colors inline-flex items-center gap-1 group"
                   >
                     {link.label}
                     <ArrowUpRight className="h-3 w-3 opacity-0 -translate-y-0.5 group-hover:opacity-100 group-hover:translate-y-0 transition-all" />
@@ -120,14 +120,14 @@ export function Footer() {
 
             {/* Newsletter */}
             <div>
-              <h4 className="font-heading font-semibold text-white text-xs uppercase tracking-wider mb-3">
+              <h4 className="font-heading font-extrabold tracking-tight text-white text-xs uppercase tracking-wider mb-3">
                 Newsletter
               </h4>
               <div className="flex gap-2">
                 <input
                   type="email"
                   placeholder="your@email.com"
-                  className="flex-1 bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
+                  className="flex-1 bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-accent/50 transition-colors"
                   id="newsletter-email"
                 />
                 <button
@@ -146,9 +146,9 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
           <p>&copy; {new Date().getFullYear()} Milestone Scholarship Program. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-gold transition-colors">Terms of Service</Link>
-            <Link href="/refund" className="hover:text-gold transition-colors">Refund Policy</Link>
+            <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-accent transition-colors">Terms of Service</Link>
+            <Link href="/refund" className="hover:text-accent transition-colors">Refund Policy</Link>
           </div>
         </div>
       </div>

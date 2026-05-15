@@ -27,7 +27,7 @@ export default function ApplyPage() {
     <div className="max-w-3xl">
       <ScrollReveal>
         <div className="mb-8">
-          <h1 className="font-heading text-2xl font-bold text-foreground">Apply for Scholarship</h1>
+          <h1 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white">Apply for Scholarship</h1>
           <p className="text-muted-foreground text-sm mt-1">Complete all steps to submit your application.</p>
         </div>
       </ScrollReveal>
@@ -40,7 +40,7 @@ export default function ApplyPage() {
               <div key={step.id} className="flex items-center gap-2">
                 <div className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold transition-colors ${
                   currentStep >= step.id
-                    ? "bg-gold text-white"
+                    ? "bg-accent text-white"
                     : "bg-muted text-muted-foreground"
                 }`}>
                   {currentStep > step.id ? <Check className="h-4 w-4" /> : step.id}
@@ -70,7 +70,7 @@ export default function ApplyPage() {
           >
             {currentStep === 1 && (
               <div className="space-y-5">
-                <h2 className="font-heading text-lg font-semibold text-foreground">Personal Information</h2>
+                <h2 className="font-heading text-lg font-extrabold tracking-tight text-primary dark:text-white">Personal Information</h2>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2"><Label htmlFor="fullName">Full Name *</Label><Input id="fullName" placeholder="Enter full name" className="rounded-xl" /></div>
                   <div className="space-y-2"><Label htmlFor="fatherName">Father&apos;s Name *</Label><Input id="fatherName" placeholder="Father's name" className="rounded-xl" /></div>
@@ -90,7 +90,7 @@ export default function ApplyPage() {
 
             {currentStep === 2 && (
               <div className="space-y-5">
-                <h2 className="font-heading text-lg font-semibold text-foreground">Academic Information</h2>
+                <h2 className="font-heading text-lg font-extrabold tracking-tight text-primary dark:text-white">Academic Information</h2>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2"><Label htmlFor="tenthMarks">10th Marks (%) *</Label><Input id="tenthMarks" type="number" placeholder="e.g. 85.5" className="rounded-xl" /></div>
                   <div className="space-y-2"><Label htmlFor="twelfthMarks">12th Marks (%)</Label><Input id="twelfthMarks" type="number" placeholder="e.g. 78.0" className="rounded-xl" /></div>
@@ -104,15 +104,15 @@ export default function ApplyPage() {
 
             {currentStep === 3 && (
               <div className="space-y-5">
-                <h2 className="font-heading text-lg font-semibold text-foreground">Select Scholarship</h2>
+                <h2 className="font-heading text-lg font-extrabold tracking-tight text-primary dark:text-white">Select Scholarship</h2>
                 <p className="text-sm text-muted-foreground">Choose the scholarship category you want to apply for.</p>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {["MBBS", "B.Tech", "BAMS", "BBA", "Law", "Nursing", "Pharmacy", "B.Sc"].map((cat) => (
                     <button
                       key={cat}
-                      className="p-4 rounded-xl border border-border/50 text-left hover:border-gold/50 hover:bg-gold/5 transition-all group"
+                      className="p-4 rounded-xl border border-border/50 text-left hover:border-accent/50 hover:bg-accent/5 transition-all group"
                     >
-                      <h4 className="font-semibold text-foreground group-hover:text-gold transition-colors">{cat} Scholarship</h4>
+                      <h4 className="font-extrabold tracking-tight text-primary dark:text-white group-hover:text-accent transition-colors">{cat} Scholarship</h4>
                       <p className="text-xs text-muted-foreground mt-1">Up to ₹5,00,000</p>
                     </button>
                   ))}
@@ -122,10 +122,10 @@ export default function ApplyPage() {
 
             {currentStep === 4 && (
               <div className="space-y-5">
-                <h2 className="font-heading text-lg font-semibold text-foreground">Upload Documents</h2>
+                <h2 className="font-heading text-lg font-extrabold tracking-tight text-primary dark:text-white">Upload Documents</h2>
                 <p className="text-sm text-muted-foreground">Upload clear, legible copies of the following documents.</p>
                 {["Aadhaar Card", "Marksheet", "Passport Photo", "Certificates"].map((doc) => (
-                  <div key={doc} className="border border-dashed border-border/50 rounded-xl p-5 text-center hover:border-gold/30 transition-colors cursor-pointer">
+                  <div key={doc} className="border border-dashed border-border/50 rounded-xl p-5 text-center hover:border-accent/30 transition-colors cursor-pointer">
                     <Upload className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
                     <p className="text-sm font-medium text-foreground">{doc}</p>
                     <p className="text-xs text-muted-foreground mt-1">Click to upload (PDF, JPG, PNG — max 5MB)</p>
@@ -136,7 +136,7 @@ export default function ApplyPage() {
 
             {currentStep === 5 && (
               <div className="space-y-5">
-                <h2 className="font-heading text-lg font-semibold text-foreground">Review & Submit</h2>
+                <h2 className="font-heading text-lg font-extrabold tracking-tight text-primary dark:text-white">Review & Submit</h2>
                 <p className="text-sm text-muted-foreground">Please review your application details before submitting.</p>
                 <div className="bg-muted/30 rounded-xl p-5 space-y-3">
                   <div className="flex justify-between text-sm"><span className="text-muted-foreground">Full Name</span><span className="font-medium text-foreground">—</span></div>

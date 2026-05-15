@@ -13,7 +13,7 @@ export default function AdminBlogPage() {
       <ScrollReveal>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="font-heading text-2xl font-bold text-foreground">Blog Posts</h1>
+            <h1 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white">Blog Posts</h1>
             <p className="text-muted-foreground text-sm mt-1">Create and manage blog content.</p>
           </div>
           <Button className="gradient-gold text-white font-semibold rounded-xl shadow-gold hover:opacity-90">
@@ -28,7 +28,7 @@ export default function AdminBlogPage() {
             <div className="bg-card rounded-2xl border border-border/50 p-5 flex items-center justify-between gap-4 transition-all hover:shadow-card-hover">
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-heading font-semibold text-foreground">{post.title}</h3>
+                  <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white">{post.title}</h3>
                   <Badge variant="outline" className="bg-green-500/10 text-green-500 border-green-500/20">Published</Badge>
                 </div>
                 <p className="text-sm text-muted-foreground">{post.category} • {formatDate(post.date)} • {post.readTime}</p>

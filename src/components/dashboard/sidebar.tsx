@@ -40,7 +40,7 @@ export function DashboardSidebar() {
                 className={cn(
                   "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors",
                   isActive
-                    ? "bg-gold/10 text-gold"
+                    ? "bg-accent/10 text-accent"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                 )}
               >
@@ -64,7 +64,7 @@ export function DashboardSidebar() {
                 href={link.href}
                 className={cn(
                   "flex flex-col items-center gap-0.5 px-2 py-1.5 rounded-lg text-[10px] font-medium transition-colors",
-                  isActive ? "text-gold" : "text-muted-foreground"
+                  isActive ? "text-accent" : "text-muted-foreground"
                 )}
               >
                 <Icon className="h-4 w-4" />

@@ -13,7 +13,7 @@ export function SuccessStories() {
         <ScrollReveal>
           <SectionHeader
             badge="Success Stories"
-            title="Students Who Made It"
+            title={<>Students Who <span className="text-accent">Made It</span></>}
             subtitle="Real stories from real students whose lives were transformed through our scholarship program."
           />
         </ScrollReveal>
@@ -21,13 +21,13 @@ export function SuccessStories() {
           {successStories.map((story, i) => (
             <ScrollReveal key={story.id} delay={i * 0.1}>
               <div className="bg-card rounded-2xl border border-border/50 p-6 transition-shadow hover:shadow-card-hover h-full">
-                <Quote className="h-8 w-8 text-gold/30 mb-4" />
-                <p className="text-sm text-muted-foreground leading-relaxed mb-6 italic">
+                <Quote className="h-8 w-8 text-accent/30 mb-4" />
+                <p className="text-base text-muted-foreground leading-loose mb-6 italic">
                   &ldquo;{story.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-3 pt-4 border-t border-border/50">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/10">
-                    <GraduationCap className="h-5 w-5 text-gold" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/10">
+                    <GraduationCap className="h-5 w-5 text-accent" />
                   </div>
                   <div>
                     <p className="font-heading font-semibold text-foreground text-sm">{story.name}</p>
@@ -35,7 +35,7 @@ export function SuccessStories() {
                   </div>
                   <div className="ml-auto text-right">
                     <p className="text-xs text-muted-foreground">Scholarship</p>
-                    <p className="text-sm font-semibold text-gold">{story.scholarship}</p>
+                    <p className="text-sm font-semibold text-accent">{story.scholarship}</p>
                   </div>
                 </div>
               </div>

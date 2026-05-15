@@ -50,7 +50,7 @@ export default function FAQsPage() {
           {categories.map((cat, ci) => (
             <ScrollReveal key={ci} delay={ci * 0.1}>
               <div className="mb-10">
-                <h3 className="font-heading text-xl font-bold text-foreground mb-4">{cat.name}</h3>
+                <h3 className="font-heading text-xl font-extrabold tracking-tight text-primary dark:text-white mb-4">{cat.name}</h3>
                 <Accordion className="space-y-3">
                   {cat.questions.map((faq, i) => (
                     <AccordionItem
@@ -60,7 +60,7 @@ export default function FAQsPage() {
                       <AccordionTrigger className="text-sm font-medium text-foreground text-left hover:no-underline py-4">
                         {faq.question}
                       </AccordionTrigger>
-                      <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
+                      <AccordionContent className="text-base text-muted-foreground leading-loose pb-4">
                         {faq.answer}
                       </AccordionContent>
                     </AccordionItem>

@@ -15,7 +15,7 @@ export function FeaturedCourses() {
         <ScrollReveal>
           <SectionHeader
             badge="Courses Covered"
-            title="Courses We Support"
+            title={<>Courses We <span className="text-accent">Support</span></>}
             subtitle="From medical sciences to engineering, we cover a wide range of academic disciplines."
           />
         </ScrollReveal>
@@ -35,8 +35,8 @@ export function FeaturedCourses() {
 
                   <div className="relative">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10">
-                        <Icon className="h-6 w-6 text-gold" />
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10">
+                        <Icon className="h-6 w-6 text-accent" />
                       </div>
                       <div className="flex items-center gap-1 text-xs text-muted-foreground">
                         <Clock className="h-3.5 w-3.5" />
@@ -44,17 +44,17 @@ export function FeaturedCourses() {
                       </div>
                     </div>
 
-                    <h3 className="font-heading font-semibold text-foreground text-lg mb-2">
+                    <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white text-lg mb-2">
                       {course.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    <p className="text-base text-muted-foreground leading-loose mb-4">
                       {course.description}
                     </p>
 
                     <div className="flex items-center justify-between pt-4 border-t border-border/50">
                       <div>
                         <span className="text-xs text-muted-foreground">Scholarship</span>
-                        <p className="text-sm font-semibold text-gold">{course.scholarshipAmount}</p>
+                        <p className="text-sm font-semibold text-accent">{course.scholarshipAmount}</p>
                       </div>
                       <Link href={`/scholarships#${course.id}`}>
                         <Button variant="ghost" size="sm" className="rounded-lg group/btn">

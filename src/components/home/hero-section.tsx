@@ -32,8 +32,8 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-grid" />
 
       {/* Radial glow effects */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-gold/5 blur-[120px]" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-gold/3 blur-[120px]" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-accent/5 blur-[120px]" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-accent/3 blur-[120px]" />
 
       {/* Floating Scholarship Cards */}
       {floatingCards.map((card, i) => (
@@ -50,7 +50,7 @@ export function HeroSection() {
             transition={{ duration: 5 + i, repeat: Infinity, ease: "easeInOut" }}
             className="glass rounded-2xl px-4 py-3 shadow-premium"
           >
-            <div className="text-lg font-heading font-bold gradient-text-gold">{card.amount}</div>
+            <div className="text-lg font-heading font-bold text-accent">{card.amount}</div>
             <div className="text-xs text-muted-foreground">{card.label}</div>
           </motion.div>
         </motion.div>
@@ -64,7 +64,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-gold/10 text-gold border border-gold/20 backdrop-blur-sm">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-accent/10 text-accent border border-accent/20 backdrop-blur-sm">
             <Sparkles className="h-3.5 w-3.5" />
             India&apos;s Premier Scholarship Platform
           </span>
@@ -75,11 +75,11 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-8 font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground dark:text-white"
+          className="mt-8 font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-primary dark:text-white text-balance"
         >
           Empowering Dreams
           <br />
-          <span className="gradient-text-gold">Beyond Financial Limits</span>
+          <span className="text-accent">Beyond Financial Limits</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -135,8 +135,8 @@ export function HeroSection() {
               return (
                 <div key={i} className="text-center">
                   <div className="flex items-center justify-center mb-2">
-                    <Icon className="h-5 w-5 text-gold mr-2" />
-                    <span className="text-2xl md:text-3xl font-heading font-bold text-foreground dark:text-white">
+                    <Icon className="h-5 w-5 text-accent mr-2" />
+                    <span className="text-2xl md:text-3xl font-heading font-extrabold tracking-tight text-primary dark:text-white">
                       <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                     </span>
                   </div>

@@ -23,7 +23,7 @@ export default function AdminExamsPage() {
       <ScrollReveal>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="font-heading text-2xl font-bold text-foreground">Exams</h1>
+            <h1 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white">Exams</h1>
             <p className="text-muted-foreground text-sm mt-1">Manage scholarship tests and exams.</p>
           </div>
           <Button className="gradient-gold text-white font-semibold rounded-xl shadow-gold hover:opacity-90">
@@ -39,7 +39,7 @@ export default function AdminExamsPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <h3 className="font-heading font-semibold text-foreground">{exam.title}</h3>
+                    <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white">{exam.title}</h3>
                     <Badge className={statusColors[exam.status]} variant="outline">{exam.status}</Badge>
                   </div>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">

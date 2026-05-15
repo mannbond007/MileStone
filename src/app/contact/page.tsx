@@ -21,7 +21,7 @@ export default function ContactPage() {
   return (
     <div className="pt-24 relative overflow-hidden">
       {/* Background Gradients for Premium Feel */}
-      <div className="absolute top-40 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-gold/10 dark:bg-gold/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-40 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-accent/10 dark:bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
 
       {/* Header Section */}
       <section className="py-12 md:py-20 relative z-10">
@@ -31,7 +31,7 @@ export default function ContactPage() {
               <MessageCircle className="h-4 w-4" />
               <span className="text-sm font-semibold tracking-wide">24/7 Student Support</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-heading font-extrabold tracking-tight text-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-heading font-extrabold tracking-tight text-primary dark:text-white mb-6">
               Need Help With Your <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-500">Scholarship Journey?</span>
             </h1>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 <div className="absolute -inset-1 bg-gradient-to-br from-gold/30 to-blue-500/20 rounded-3xl blur-xl opacity-50 dark:opacity-30 pointer-events-none" />
                 <div className="relative bg-white/80 dark:bg-navy/80 backdrop-blur-xl border border-black/5 dark:border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)]">
                   
-                  <h3 className="text-2xl font-heading font-bold mb-8 text-foreground">
+                  <h3 className="text-2xl font-heading font-extrabold tracking-tight mb-8 text-primary dark:text-white">
                     Get in Touch
                   </h3>
 
@@ -63,11 +63,11 @@ export default function ContactPage() {
                       return (
                         <a key={i} href={item.href} className="flex items-start gap-5 group">
                           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white dark:bg-zinc-900 border border-black/5 dark:border-white/10 shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all duration-300">
-                            <Icon className="h-6 w-6 text-gold" />
+                            <Icon className="h-6 w-6 text-accent" />
                           </div>
                           <div className="pt-1">
                             <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-1">{item.label}</p>
-                            <p className="text-lg font-medium text-foreground group-hover:text-gold transition-colors">{item.value}</p>
+                            <p className="text-lg font-medium text-foreground group-hover:text-accent transition-colors">{item.value}</p>
                           </div>
                         </a>
                       );
@@ -99,14 +99,14 @@ export default function ContactPage() {
             {/* RIGHT: Modern Contact Form */}
             <ScrollReveal delay={0.1}>
               <div className="bg-card rounded-3xl border border-border/50 p-8 md:p-12 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 blur-3xl rounded-full pointer-events-none" />
+                <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 blur-3xl rounded-full pointer-events-none" />
                 
                 {submitted ? (
                   <div className="text-center py-20 relative z-10">
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-green-500/10 mx-auto mb-6">
                       <Send className="h-8 w-8 text-green-500" />
                     </div>
-                    <h3 className="font-heading text-2xl font-bold text-foreground mb-3">Message Sent Successfully!</h3>
+                    <h3 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white mb-3">Message Sent Successfully!</h3>
                     <p className="text-muted-foreground">Thank you for reaching out. Our support team will get back to you within 24 hours.</p>
                   </div>
                 ) : (
