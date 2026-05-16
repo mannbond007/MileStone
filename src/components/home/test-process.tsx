@@ -2,7 +2,7 @@
 
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { SectionHeader } from "@/components/ui/section-header";
-import { testProcessSteps } from "@/constants/home-data";
+import { scholarshipProcessSteps } from "@/constants/home-data";
 
 export function TestProcess() {
   return (
@@ -11,15 +11,15 @@ export function TestProcess() {
         <ScrollReveal>
           <SectionHeader
             badge="How It Works"
-            title={<>Scholarship Test <span className="text-accent">Process</span></>}
-            subtitle="A simple 4-step process to secure your scholarship and begin your academic journey."
+            title={<>Scholarship <span className="text-accent">Process</span></>}
+            subtitle="A simple 6-step process to apply, qualify, and access scholarship benefits under the Milestone Scholarship Program."
           />
         </ScrollReveal>
 
         <div className="relative max-w-4xl mx-auto">
           <div className="absolute left-8 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-border" />
           <div className="space-y-8 md:space-y-12">
-            {testProcessSteps.map((step, i) => {
+            {scholarshipProcessSteps.map((step, i) => {
               const Icon = step.icon;
               const isEven = i % 2 === 0;
               return (

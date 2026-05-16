@@ -283,38 +283,48 @@ export interface Benefit {
 export const benefits: Benefit[] = [
   {
     title: "Financial Support",
-    description: "Comprehensive financial aid covering tuition, books, and living expenses for deserving students.",
+    description: "Scholarship assistance, tuition fee support, fee waivers, educational rewards, and academic benefit programs for deserving students.",
     icon: Banknote,
   },
   {
-    title: "Expert Mentorship",
-    description: "One-on-one guidance from industry professionals and academic leaders throughout your journey.",
+    title: "Mentorship & Guidance",
+    description: "Personalized mentorship, academic guidance, and career support from experienced educators and professionals.",
     icon: UserCheck,
   },
   {
-    title: "Career Guidance",
-    description: "Professional career counseling, resume building, and interview preparation support.",
+    title: "Career & Admission Support",
+    description: "Career counseling, college selection guidance, admission assistance, resume support, and future career planning.",
     icon: Target,
   },
   {
-    title: "Exam Preparation",
-    description: "Access to premium study materials, mock tests, and coaching for competitive exams.",
-    icon: Clock,
+    title: "Competitive Exam Support",
+    description: "Study resources, mock tests, mentorship, preparation guidance, and academic support for NEET, JEE, CUET, CLAT, SSC & other exams.",
+    icon: FileText,
   },
   {
-    title: "Skill Development",
-    description: "Workshops, webinars, and training programs to build industry-relevant skills.",
+    title: "Skill Development Programs",
+    description: "Workshops, training sessions, personality development, communication skills, and industry-oriented learning opportunities.",
     icon: Award,
   },
   {
-    title: "Placement Support",
-    description: "Direct connections with top employers and placement assistance after graduation.",
+    title: "Internship & Professional Exposure",
+    description: "Internship opportunities, training programs, certification support, project guidance, and industry exposure initiatives.",
+    icon: Briefcase,
+  },
+  {
+    title: "Placement & Future Opportunities",
+    description: "Career opportunity support, professional networking, placement assistance, and higher education guidance.",
     icon: Rocket,
+  },
+  {
+    title: "Student Support Ecosystem",
+    description: "A complete support platform focused on education, mentorship, growth, opportunities, and student success.",
+    icon: Shield,
   },
 ];
 
 /* ========================================
-   TEST PROCESS STEPS
+   SCHOLARSHIP PROCESS STEPS
    ======================================== */
 export interface ProcessStep {
   step: number;
@@ -323,29 +333,41 @@ export interface ProcessStep {
   icon: LucideIcon;
 }
 
-export const testProcessSteps: ProcessStep[] = [
+export const scholarshipProcessSteps: ProcessStep[] = [
   {
     step: 1,
     title: "Register Online",
-    description: "Create your account and fill in your basic details to begin the application process.",
+    description: "Create your account, complete the application form, and register for the scholarship program.",
     icon: Users,
   },
   {
     step: 2,
-    title: "Take Scholarship Test",
-    description: "Appear for the online scholarship assessment test based on your course selection.",
+    title: "Take the Scholarship Test",
+    description: "Appear for the online/offline scholarship assessment test based on your selected course or category. The selection process may include Phase 1 and Phase 2 evaluations.",
     icon: FileText,
   },
   {
     step: 3,
     title: "Get Your Results",
-    description: "Receive your test score and scholarship eligibility status within 7 working days.",
+    description: "Receive your scholarship test score, merit ranking, and eligibility status.",
     icon: Trophy,
   },
   {
     step: 4,
-    title: "Receive Scholarship",
-    description: "Get your scholarship amount credited directly and begin your academic journey.",
+    title: "Choose Your Institution",
+    description: "Select from listed partner universities, colleges, coaching institutes, or educational institutions participating in the program.",
+    icon: Building,
+  },
+  {
+    step: 5,
+    title: "Complete Admission Process",
+    description: "Eligible students may receive tuition fee concessions, scholarship-linked admission benefits, cashback support, fee waivers, or educational rewards based on merit rank, institution policy, and scholarship category. Some institutions may provide direct fee reductions during admission, while in certain cases scholarship/reward benefits may be processed after admission as per applicable terms and timelines.",
+    icon: CheckCircle,
+  },
+  {
+    step: 6,
+    title: "Receive Scholarship Benefits",
+    description: "Selected students may receive scholarship support, educational rewards, cashback assistance, fee concessions, mentorship, or institutional benefits and begin their academic journey with continued guidance and support.",
     icon: GraduationCap,
   },
 ];
