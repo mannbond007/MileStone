@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { SectionHeader } from "@/components/ui/section-header";
-import { testProcessSteps } from "@/constants/home-data";
+import { scholarshipProcessSteps } from "@/constants/home-data";
 import { BookOpen, Clock, FileText, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -63,7 +63,7 @@ export default function ScholarshipTestPage() {
             <h3 className="font-heading text-2xl font-extrabold tracking-tight text-primary dark:text-white text-center mb-10">How the Test Works</h3>
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-5">
-            {testProcessSteps.map((step, i) => {
+            {scholarshipProcessSteps.map((step, i) => {
               const Icon = step.icon;
               return (
                 <ScrollReveal key={i} delay={i * 0.1}>
