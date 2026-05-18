@@ -3,6 +3,8 @@
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { statistics } from "@/constants/home-data";
+import { SectionHeader } from "@/components/ui/section-header";
+import { Target } from "lucide-react";
 
 export function StatisticsSection() {
   return (
@@ -11,7 +13,15 @@ export function StatisticsSection() {
       <div className="absolute inset-0 bg-muted/30 dark:bg-navy/30" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <ScrollReveal>
+          <SectionHeader
+            badge={<span className="flex items-center gap-1.5"><Target className="h-3.5 w-3.5" /> Our Impact</span>}
+            title={<>Milestone in <span className="text-accent">Numbers</span></>}
+            subtitle="Transforming lives and building futures by making quality education accessible to every deserving student."
+          />
+        </ScrollReveal>
+        
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-16">
           {statistics.map((stat, i) => {
             const Icon = stat.icon;
             return (

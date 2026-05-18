@@ -204,8 +204,8 @@ export interface Statistic {
 export const statistics: Statistic[] = [
   { label: "Students Supported", value: 15000, suffix: "+", icon: Users },
   { label: "Scholarships Awarded", value: 5200, suffix: "+", icon: Trophy },
-  { label: "Partner Colleges", value: 350, suffix: "+", icon: Building },
-  { label: "Success Rate", value: 94, suffix: "%", icon: TrendingUp },
+  { label: "Partner Colleges", value: 1750, suffix: "+", icon: Building },
+  { label: "Success Rate", value: 96, suffix: "%", icon: TrendingUp },
 ];
 
 /* ========================================
@@ -343,7 +343,7 @@ export const scholarshipProcessSteps: ProcessStep[] = [
   {
     step: 2,
     title: "Take the Scholarship Test",
-    description: "Appear for the online/offline scholarship assessment test based on your selected course or category. The selection process may include Phase 1 and Phase 2 evaluations.",
+    description: "Appear for the online/offline scholarship assessment test based on your selected course or category.\nThe selection process may include Phase 1 and Phase 2 evaluations.",
     icon: FileText,
   },
   {
@@ -361,7 +361,7 @@ export const scholarshipProcessSteps: ProcessStep[] = [
   {
     step: 5,
     title: "Complete Admission Process",
-    description: "Eligible students may receive tuition fee concessions, scholarship-linked admission benefits, cashback support, fee waivers, or educational rewards based on merit rank, institution policy, and scholarship category. Some institutions may provide direct fee reductions during admission, while in certain cases scholarship/reward benefits may be processed after admission as per applicable terms and timelines.",
+    description: "Eligible students may receive tuition fee concessions, scholarship-linked admission benefits, cashback support, fee waivers, or educational rewards based on merit rank, institution policy, and scholarship category.\nSome institutions may provide direct fee reductions during admission, while in certain cases scholarship/reward benefits may be processed after admission as per applicable terms and timelines.",
     icon: CheckCircle,
   },
   {
