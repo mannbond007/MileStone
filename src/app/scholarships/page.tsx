@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { SectionHeader } from "@/components/ui/section-header";
 import { scholarshipCategories } from "@/constants/home-data";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles, HeartPulse } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { NeetJeeDetails } from "@/components/scholarships/neet-jee-details";
 import { FutureFoundationDetails } from "@/components/scholarships/future-foundation-details";
+import { MbbsDetails } from "@/components/scholarships/mbbs-details";
 
 export const metadata: Metadata = {
   title: "Scholarships",
@@ -38,17 +39,38 @@ export default function ScholarshipsPage() {
                 <ScrollReveal key={cat.id} delay={i * 0.04}>
                   <div
                     id={cat.id}
-                    className="group bg-card rounded-2xl border border-border/50 p-6 transition-all hover:shadow-card-hover hover:border-accent/20 h-full flex flex-col justify-between"
+                    className={`group rounded-3xl border p-7 transition-all duration-500 h-full flex flex-col justify-between relative overflow-hidden ${
+                      cat.id === "mbbs"
+                        ? "bg-card/40 backdrop-blur-xl border-accent/40 shadow-[0_8px_40px_-12px_rgba(229,170,54,0.2)] hover:shadow-[0_16px_60px_-15px_rgba(229,170,54,0.3)] hover:border-accent/80 hover:-translate-y-1 z-10"
+                        : "bg-card border-border/50 hover:shadow-card-hover hover:border-accent/20"
+                    }`}
                   >
-                    <div>
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl mb-4" style={{ backgroundColor: `${cat.color}15` }}>
-                        <Icon className="h-6 w-6" style={{ color: cat.color }} />
+                    {/* Modern premium lighting effects for MBBS */}
+                    {cat.id === "mbbs" && (
+                      <>
+                        <div className="absolute top-0 right-0 -mt-16 -mr-16 h-64 w-64 rounded-full bg-accent/15 blur-[60px] z-0 pointer-events-none transition-all duration-700 group-hover:bg-accent/25 group-hover:scale-110" />
+                        <div className="absolute bottom-0 left-0 -mb-16 -ml-16 h-56 w-56 rounded-full bg-accent/10 blur-[50px] z-0 pointer-events-none transition-all duration-700 group-hover:bg-accent/20" />
+                        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/70 to-transparent opacity-50" />
+                      </>
+                    )}
+
+                    <div className="relative z-10">
+                      <div className="flex items-center justify-between mb-5">
+                        <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl ${cat.id === 'mbbs' ? 'bg-gradient-to-br from-accent/20 to-accent/5 shadow-inner' : ''}`} style={cat.id !== 'mbbs' ? { backgroundColor: `${cat.color}15` } : {}}>
+                          <Icon className="h-7 w-7" style={{ color: cat.color }} />
+                        </div>
+                        {cat.id === "mbbs" && (
+                          <div className="flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent/10 to-accent/5 px-3.5 py-1.5 border border-accent/20 backdrop-blur-md shadow-sm">
+                            <HeartPulse className="h-3.5 w-3.5 text-accent animate-pulse" />
+                            <span className="text-[11px] font-bold text-accent uppercase tracking-widest whitespace-nowrap">Future Doctor</span>
+                          </div>
+                        )}
                       </div>
-                      <h3 className="font-heading font-extrabold tracking-tight text-primary dark:text-white text-lg mb-2">{cat.title}</h3>
-                      <p className="text-base text-muted-foreground leading-loose mb-4 flex-1">{cat.description}</p>
+                      <h3 className={`font-heading font-extrabold tracking-tight mb-2.5 ${cat.id === 'mbbs' ? 'text-xl text-primary dark:text-white' : 'text-lg text-primary dark:text-white'}`}>{cat.title}</h3>
+                      <p className="text-base text-muted-foreground leading-relaxed mb-5 flex-1">{cat.description}</p>
                     </div>
 
-                    <div>
+                    <div className="relative z-10">
                       <div className="space-y-2 pt-4 border-t border-border/50">
                         <div className="flex justify-between text-sm">
                           <span className="text-muted-foreground">Scholarship</span>
@@ -73,6 +95,13 @@ export default function ScholarshipsPage() {
                             </Button>
                           </Link>
                         )}
+                        {cat.id === "mbbs" && (
+                          <Link href="#mbbs-program" className="w-full">
+                            <Button size="sm" variant="outline" className="w-full rounded-xl border-accent/20 text-accent hover:bg-accent/5 dark:border-white/10 dark:hover:bg-white/5 transition-all text-xs font-semibold">
+                              View Detailed Structure
+                            </Button>
+                          </Link>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -83,6 +112,7 @@ export default function ScholarshipsPage() {
         </div>
       </section>
 
+      <MbbsDetails />
       <NeetJeeDetails />
       <FutureFoundationDetails />
     </div>
