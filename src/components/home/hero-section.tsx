@@ -89,8 +89,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="mt-6 text-base sm:text-lg md:text-xl text-muted-foreground dark:text-white/60 max-w-2xl mx-auto leading-relaxed text-pretty"
         >
-          Scholarships up to ₹5,00,000 for MBBS, B.Tech, Law, Nursing & more.
-          Transforming the future of 15,000+ students across India.
+          Scholarship opportunities across Medical, Engineering, Law, Nursing, Management, Arts, Commerce, Science, Technology and Professional Courses & Transforming the future of 15000+ Student  Across India.
         </motion.p>
 
         {/* CTA Buttons */}

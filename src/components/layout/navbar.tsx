@@ -35,6 +35,7 @@ export function Navbar() {
     [
       "/",
       "/about",
+      "/vision-mission",
       "/scholarships",
       "/courses",
       "/scholarship-test",

@@ -9,6 +9,7 @@ import {
   Phone,
   Home,
   Info,
+  Target,
   type LucideIcon,
 } from "lucide-react";
 
@@ -21,6 +22,7 @@ export interface NavLink {
 export const mainNavLinks: NavLink[] = [
   { label: "Home", href: "/", icon: Home },
   { label: "About", href: "/about", icon: Info },
+  { label: "Vision & Mission", href: "/vision-mission", icon: Target },
   { label: "Scholarships", href: "/scholarships", icon: GraduationCap },
   { label: "Courses", href: "/courses", icon: BookOpen },
   { label: "Scholarship Test", href: "/scholarship-test", icon: FileText },

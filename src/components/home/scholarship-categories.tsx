@@ -15,7 +15,7 @@ export function ScholarshipCategories() {
           <SectionHeader
             badge="Scholarship Programs"
             title={<>Explore Our <span className="text-accent">Scholarships</span></>}
-            subtitle="Choose from 16+ scholarship categories across medical, engineering, law, arts, and more."
+            subtitle="Choose from 100+ Scholarship categories across Medical, Engineering, Law, Arts and many more."
           />
         </ScrollReveal>
 
