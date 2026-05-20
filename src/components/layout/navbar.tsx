@@ -66,7 +66,7 @@ export function Navbar() {
       flex items-center rounded-[15px]
       border border-black/5 dark:border-white/10
       bg-white/80 dark:bg-[#111111]/80
-      backdrop-blur-md
+      backdrop-blur-lg
       px-2 py-2
       shadow-sm dark:shadow-[0_4px_20px_rgba(0,0,0,0.35)]
     "
@@ -82,7 +82,7 @@ export function Navbar() {
                   className="h-11 w-auto object-contain"
                 />
               </div>
-            </div>
+            </div>@
           </Link>
 
           {/* Desktop Nav */}
