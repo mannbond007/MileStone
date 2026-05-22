@@ -204,7 +204,7 @@ export interface Statistic {
 export const statistics: Statistic[] = [
   { label: "Students Supported", value: 15000, suffix: "+", icon: Users },
   { label: "Scholarships Awarded", value: 5200, suffix: "+", icon: Trophy },
-  { label: "Partner Colleges", value: 1750, suffix: "+", icon: Building },
+  { label: "Partner Institutions", value: 1750, suffix: "+", icon: Building },
   { label: "Success Rate", value: 96, suffix: "%", icon: TrendingUp },
 ];
 

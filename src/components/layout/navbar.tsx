@@ -82,7 +82,7 @@ export function Navbar() {
                   className="h-11 w-auto object-contain"
                 />
               </div>
-            </div>@
+            </div>
           </Link>
 
           {/* Desktop Nav */}

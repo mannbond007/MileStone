@@ -16,7 +16,7 @@ const floatingCards = [
 const stats = [
   { icon: Users, value: 15000, suffix: "+", label: "Students" },
   { icon: Trophy, value: 5200, suffix: "+", label: "Scholarships" },
-  { icon: Building, value: 1750, suffix: "+", label: "Colleges" },
+  { icon: Building, value: 1750, suffix: "+", label: "Colleges/Institutions" },
   { icon: GraduationCap, value: 96, suffix: "%", label: "Success Rate" },
 ];
 
